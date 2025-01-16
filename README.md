@@ -1,1 +1,0 @@
-# AdeptAdvertising-v1.0
