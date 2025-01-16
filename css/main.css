@@ -1,0 +1,348 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    color: #CC7F3B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 60px;
+    margin: 0 auto;
+    min-width: auto;
+    /* transform: scale(0, 0); */
+}
+
+/* Заглавный баннер */
+
+.header {
+    padding-top: 44px;
+    background-color: #efdecd;
+    padding-bottom: 30px;
+    min-width: 375px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 76px;
+}
+
+.logo {
+    position: relative;
+    padding: 0 12px;
+    padding-right: 12px;
+    padding-top: 3px;
+    background-color: #efdecd;
+    top: 20px;
+
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1;
+    color: black;
+}
+
+.nav-logo {
+    width: 45px;
+    height: 45px;
+}
+
+/* навигация */
+
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-button {
+    display: none;
+}   
+
+.nav-link {
+    color: #cc7f3b;
+    transition: all .3s ease-in .1s;
+}
+
+.nav-link:hover {
+    color: #ff993f;
+}
+
+.nav-link.active {
+    color: #ff8317;
+}
+
+.section {
+    padding-bottom: 40px;
+ min-width: 500px;
+ padding-top: 60px;
+}
+
+/* навигационная кнопка */
+ 
+
+
+/* контент в заглавной */
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.header-content {
+    margin-top: 124px;
+    min-width: 375px;
+}
+
+.header-heading {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 44px;
+}
+
+.header-subheading {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.header-content p {
+    line-height: 2;
+}
+
+
+/* Услуги и цены */
+
+.services{
+    padding: 90px 0;
+    background-color: #e3dac9;
+    text-align: center;
+    min-width: 375px;
+}
+
+.services-row {
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    text-align: center;
+}
+
+.service-card {
+    border-radius: 1em;
+    flex: 1 1 0;
+    min-width: 315px;
+    text-align: center;
+}
+
+.service-card-img {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    /* width: 90px;
+    height: 90px; */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.service-card-title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.service-card p {
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+
+}
+
+/* о себе */
+.portfolio {
+    padding-bottom: 40px;
+    background-color: #3B3C36;
+    min-width: 375px;
+    padding-top: 60px;
+    
+}
+
+.portfolio-row {
+    display: flex;
+    column-gap: 50px;
+    justify-content: space-between;
+}
+
+
+/* .portfolio-img {
+    
+} */
+
+.portfolio-heading {
+    padding-bottom: 2px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.portfolio-list {
+    text-align: justify;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    list-style-type: disc;
+}
+
+.portfolio-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 500;
+}
+
+.portfolio-item-description {
+    font-size: 10px;
+    line-height: 2;
+    font-weight: 100;
+}
+
+/* Качества */
+
+.quality-heading {
+    margin-top: 70px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.quality-list {
+    text-align: justify;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    list-style-type: disc;
+}
+
+.quality-item {
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 2;
+    font-weight: 500;
+}
+
+/* Партнеры */
+
+.companies {
+    padding-bottom: 40px;
+    min-width: 375px;
+    padding-top: 60px;
+    background-color: #e3dac9;
+}
+
+.companies-title {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: #cc7f3b;
+}
+
+.companies-row {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 40px;
+    justify-content: center;
+}
+
+.companies-card {
+    justify-content: center;
+    align-items: center;
+}
+
+.companies-img {
+    width: 150px;
+    height: 150px;
+    filter: saturate(0);
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.companies-img:hover {
+    filter: saturate(1);
+    border-radius: 10%;
+}
+
+.contacts {
+    padding-bottom: 40px;
+    min-width: 375px;
+    padding-top: 60px;
+    background-color: #efdecd;
+}
+
+.contact-heading {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: #cc7f3b;
+}
+
+.contact-subheading{
+    padding-top: 60px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    color: #cc7f3b;
+}
+
+.contact-row {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 90px;
+    row-gap: 40px;
+    justify-content: center;
+}
+
+.contact-card {
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card-img {
+    width: 100px;
+    height: 100px;
+    mix-blend-mode: screen;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
